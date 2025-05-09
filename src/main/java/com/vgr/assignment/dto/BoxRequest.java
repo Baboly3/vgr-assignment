@@ -1,0 +1,8 @@
+package com.vgr.assignment.dto;
+
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+
+import java.util.List;
+
+public record BoxRequest(@NotEmpty List<@Valid ArticleCount> items) { }
